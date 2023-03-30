@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+    </style>
+
+</head>
+<body>
+    
+    <div class="main">
+        <img src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Lamborghini/Aventador/6721/Lamborghini-Aventador-SVJ/1621849426405/front-left-side-47.jpg?tr=w-375" alt="" height="300px" width="100%" class="x">
+        <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2Fyc3xlbnwwfHwwfHw%3D&w=1000&q=80" alt="" height="300px" width="100%" class="x">
+        <img src="https://imageio.forbes.com/specials-images/imageserve/5d35eacaf1176b0008974b54/2020-Chevrolet-Corvette-Stingray/0x0.jpg?format=jpg&crop=4560,2565,x790,y784,safe&width=960" alt="" height="300px" width="100%" class="x">
+        <img src="https://www.bugatti.com/fileadmin/_processed_/e/e/csm_og-image_b5397aa5e3.jpg" alt="" height="300px" width="100%" class="x">
+    </div>
+
+    <script>
+        key = 0;
+        function slider()
+        {
+            images = document.getElementsByClassName('x');
+
+            console.log(images);
+
+            for(i=0; i<images.length; i++)
+            {
+                images[i].style.display = "none";
+                // images[i].classList.add('xyz');
+            }
+
+            images[key].style.display = "block";
+            key++;
+            if(key==4)
+            {
+                key=0;
+            }
+           setTimeout("slider()",1000)
+        }
+        slider();
+    </script>
+</body>
+</html>

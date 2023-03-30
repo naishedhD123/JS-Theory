@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p class="p1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos delectus repellendus, veniam assumenda eligendi
+        laboriosam ad ipsam quis, eaque minus voluptates itaque natus consequatur hic aperiam maxime nobis nam
+        perferendis?
+    </p>
+
+    <button onclick="hide()">Hide</button>
+    <button onclick="show()">Show</button>
+    <button class="b1" onclick="hideShowPara()">Hide</button>
+
+
+
+    <script>
+        p_tag = document.getElementsByClassName('p1');
+        btn = document.getElementsByClassName('b1');
+
+        // console.log(btn);
+
+        function hide(){
+            p_tag[0].style.display = "none";
+        }
+
+        function show(){
+            p_tag[0].style.display = "block";
+        }
+
+        function hideShowPara(){
+            if(p_tag[0].style.display == "none")
+            {
+                p_tag[0].style.display = "block";
+                btn[0].innerHTML = "Hide";
+            }
+            else
+            {
+                p_tag[0].style.display = "none";
+                btn[0].innerHTML = "Show";
+            }
+        }
+    </script>
+</body>
+
+</html>

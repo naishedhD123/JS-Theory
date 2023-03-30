@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.main{
+			border: 3px solid;
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-rows: 150px 150px 150px;
+		}
+		.main .x{
+			border: 3px solid blue;
+		}
+	</style>
+</head>
+<body>
+
+	<input type="radio" name="x">Male
+	<input type="radio" name="x">Male
+
+	<div class="main">
+		<div class="x" id="x">1</div>
+		<div class="x" id="x">2</div>
+		<div class="x">3</div>
+		<div class="x">4</div>
+		<div class="x">5</div>
+		<div class="x">6</div>
+		<div class="x">7</div>
+		<div class="x">8</div>
+		<div class="x">9</div>
+	</div>
+
+	<script type="text/javascript">
+		div_arr = document.getElementsByClassName('x');
+		// div_arr = document.getElementsByTagName('div');
+		// div_arr = document.getElementsByName('x');
+		// div_arr1 = document.getElementById('x');
+
+		console.log(div_arr);
+
+		// div_arr[0].style.background = "blue";
+		// div_arr[2].style.background = "blue";
+		// div_arr[4].style.background = "blue";
+		// div_arr[6].style.background = "blue";
+		// div_arr[8].style.background = "blue";
+
+		for(i=0; i<div_arr.length; i++)
+		{
+			if( = 0)
+			{
+				div_arr[i].style.background = "blue"
+			}
+		}
+	</script>
+
+</body>
+</html>

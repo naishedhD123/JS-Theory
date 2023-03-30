@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .xyz{
+            background-color: blueviolet;
+            border: 3px solid green;
+            box-shadow: 0 0 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="h">Naishedh</h1>
+
+    <button onclick="addCss()">Add Css</button>
+    <button onclick="RemoveCss()">Remove Css</button>
+    <button onclick="addRemoveCss()">click</button>
+
+    <script>
+        h1_tag = document.getElementById('h');
+
+        // h1_tag.style.color = "red";
+        // h1_tag.style.border = "2px solid green";
+
+        // h1_tag.classList.add('xyz');
+        // h1_tag.classList.remove('xyz');
+        
+        function addCss(){
+            h1_tag.classList.add('xyz');
+        }
+
+        function RemoveCss(){
+            h1_tag.classList.remove('xyz');
+        }
+
+        function addRemoveCss(){
+            h1_tag.classList.toggle('xyz');
+        }
+
+        h1_tag.style.color = "red";
+
+        document.write(h1_tag.innerHTML);
+    </script>
+    
+</body>
+</html>

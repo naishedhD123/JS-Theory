@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <style type="text/css">
+        div{
+            display: flex;
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <h1 id="c"></h1>
+        <h1 id="c1"></h1>
+        <h1 id="c2"></h1>
+    </div>
+
+
+    <script type="text/javascript">
+        
+        h1_tag = document.getElementById('c');
+        h1_tag1 = document.getElementById('c1');
+        h1_tag2 = document.getElementById('c2');
+
+        // console.log(h1_tag)
+        x=0;
+
+        cnt = setInterval("abc()", 10);
+
+
+        function abc() 
+        {
+            if (x==500) 
+            {
+                clearInterval(cnt);
+            }
+            else
+            {
+                h1_tag.innerHTML = ++x;
+                h1_tag1.innerHTML = ++x;
+                h1_tag2.innerHTML = ++x;
+            }
+        }
+
+    </script>
+</body>
+</html>

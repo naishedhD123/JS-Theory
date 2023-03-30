@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<h3 id="x" class="x">Heading</h3>
+	<h3 id="x" class="x">Heading</h3>
+	<h3 id="x" class="x">Heading</h3>
+	<h3 id="x" class="x">Heading</h3>
+
+	<script type="text/javascript">
+		// h3_arr =  document.getElementsByTagName('h3');
+		// h3_arr =  document.getElementsByClassName('x');
+		// h3_arr =  document.getElementById('x');
+
+		// h3_arr =  document.querySelector('.x')
+		// h3_arr = document.querySelector('#x')
+
+		// h3_arr = document.querySelectorAll('.x')
+		h3_arr = document.querySelectorAll('#x')
+
+		// h3_arr[2].style.color = "red";
+
+		for(i=0; i<h3_arr.length; i++)
+		{
+			h3_arr[i].style.color="blue";
+		}
+
+		console.log(h3_arr);
+	</script>
+
+</body>
+</html>

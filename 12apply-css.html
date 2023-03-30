@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.xyz{
+			color: green;
+			background: red;
+			padding: 20px;
+		}
+	</style>
+</head>
+<body>
+
+	<h1 id="t1">Naishedh</h1>
+
+	<button onclick="addCss()">Add CSS</button>
+	<button onclick="remoevCss()">Remove CSS</button>
+	<button onclick="addRemoveCss()">Add Remove CSS</button>
+
+	<script type="text/javascript">
+
+		h1 = document.getElementById('t1');
+
+		function addCss()
+		{
+			h1.classList.add('xyz');
+		}
+
+		function remoevCss()
+		{
+			h1.classList.remove('xyz');
+		}
+
+		function addRemoveCss()
+		{
+			h1.classList.toggle('xyz');
+		}
+	</script>
+
+</body>
+</html>

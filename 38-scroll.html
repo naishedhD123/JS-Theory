@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		*{margin: 0;}
+		header{
+			background-color: orange;
+			width: 100%;
+			font-size: 25px;
+			display: flex;
+			top: 0;
+			text-align: center;
+			position: fixed;
+			transition: 1s;
+		}
+		
+		.logo{
+			padding: 50px 0;
+			background-color: pink;
+			width: 20%;
+		}
+		.cname{
+/*			padding: 15px 0;*/
+			width: 80%;
+			background: lightblue;
+			padding: 50px 0;
+
+		}
+		nav{
+			height: 50px;
+			background-color: green;
+			margin-top: 129px;
+		}
+		section{
+			height: 1900px;
+			background-color: darkgray;
+		}
+		footer{
+			height: 100px;
+			background-color: maroon;
+		}
+	</style>
+</head>
+<body onscroll="scrollPage()">
+
+	<header id="header">
+		<div class="logo">Logo</div>
+		<div class="cname">Comapany Name</div>
+	</header>
+	<nav>navigation</nav>
+	<section>content</section>
+	<footer>Footer</footer>
+
+	<script type="text/javascript">
+		arr_header = document.getElementById('header');
+
+		// console.log(arr_header);
+
+		function scrollPage() 
+		{
+			if(document.documentElement.scrollTop > 300)
+			{
+					// arr_header.style.top = '-100px';
+				arr_header.style.height = '100px';
+				arr_header.style.opacity = '0';
+
+			}
+			else
+			{
+					// arr_header.style.top = '0px';
+				arr_header.style.height = '130px';
+				arr_header.style.opacity = '1';
+
+			}
+		}
+	</script>
+
+</body>
+</html>

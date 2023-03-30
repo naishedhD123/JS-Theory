@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+</head>
+<body>
+
+    <input type="text" name="" id="inp" value="200"><br>
+    <span id="res">res</span><br>
+    <select id="qunt" onchange="getprice()">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+    </select>
+
+
+    <script type="text/javascript">
+        input = document.getElementById('inp');
+        result = document.getElementById('res');
+        quentity = document.getElementById('qunt');
+
+        // console.log(quentity);
+
+        function getprice() 
+        {
+            result.innerHTML = quentity.value * input.value;  
+        }
+    </script>
+
+</body>
+</html>

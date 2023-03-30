@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="d1">Div tag</div>
+    <p id="para">This is para</p>
+    <a href="x.html" id="anc">Link</a>
+    <input type="text">
+    <img src="xyz.jpg" alt="NO image" height="100px" width="100px" id="i1">
+
+    <script>
+        div_tag = document.getElementById('d1');
+        p_tag = document.getElementById('para');
+        a_tag = document.getElementById('anc');
+        img_tag = document.getElementById('i1');
+
+        alert(div_tag.innerHTML);
+        alert(p_tag.innerHTML);
+        alert(a_tag.innerHTML);
+        alert(a_tag.href);
+        alert(img_tag.alt);
+    </script>
+    
+</body>
+</html>

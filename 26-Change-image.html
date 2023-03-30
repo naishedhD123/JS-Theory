@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+</head>
+<body>
+
+    <img src="" height="100px" width="100px" id="img1">
+    <img src="https://images.squarespace-cdn.com/content/v1/51a39504e4b093105c265c24/1589383608813-TLO2OZ4QSCY8SQNRO4ZB/composition-study-stanley.jpg?format=2500w" height="100px" width="100px" id="img2">
+
+    <button onclick="getImg()">get Image</button>
+    <button onclick="changeImg()">Change Image</button>
+
+    <script type="text/javascript">
+        img1 = document.getElementById('img1');
+        img2 = document.getElementById('img2');
+
+        function getImg() 
+        {
+            img1.src = "https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
+        }
+        function changeImg() 
+        {
+            img2.src = "https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
+        }
+    </script>
+
+</body>
+</html>

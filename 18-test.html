@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 id="h">hello</h1>
+    <div id="d1">div tag</div>
+    <p id="test">this is para</p>
+    <a href="x.html" id="c">Link</a>
+    <input type="text" id="inp" value="">
+    <img src="" alt="No Image" id="im">
+
+
+
+    <script>
+
+        h1_tag = document.getElementById('h');
+        div_tag = document.getElementById('d1');
+        p_tag = document.getElementById('test');
+        a_tag = document.getElementById('c');
+        inp_tag = document.getElementById('inp');
+        img_tag = document.getElementById('im');
+
+
+        // console.log(div_tag);
+        // alert(h1_tag.innerHTML);
+        // alert(div_tag.innerHTML);
+        // alert(p_tag.innerHTML);
+        // alert(a_tag.href);
+        // alert(inp_tag.value);
+        // alert(img_tag.alt);
+
+        // inp_tag.value = div_tag.id;
+        // inp_tag.value = "hi";
+        // inp_tag.value = h1_tag.innerHTML
+        // h1_tag.innerHTML = "Bhumi";
+
+
+        function dhruvi() 
+        {
+            if (inp_tag.value == "") {
+                inp_tag.value = "how are you";
+                h1_tag.style.color = "red";
+                h1_tag.innerHTML = "akshay"
+            }
+        }
+
+        dhruvi();
+
+    </script>
+
+</body>
+
+</html>
