@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <div>
+    <img src="1.jpg" alt="" id="i" height="300px" width="100%">
+    <img src="2.jpg" alt="" id="i" height="300px" width="100%">
+    <img src="3.jpg" alt="" id="i" height="300px" width="100%">
+    <img src="4.jpg" alt="" id="i" height="300px" width="100%">
+  </div>
+
+  <script>
+
+
+
+
+
+    index = 0;
+
+    function slider()
+    {
+      img = document.querySelectorAll('#i');
+
+      // console.log(img);
+
+      for(var i=0; i<img.length; i++)
+      {
+        img[i].style.display = "none";
+      }
+
+      img[index].style.display = "block";
+      index++;
+
+      if(index == img.length)
+      {
+        index = 0;
+      }
+
+      setTimeout("slider()",1000);
+    }
+
+    // slider();
+
+
+
+
+  </script>
+
+</body>
+</html>

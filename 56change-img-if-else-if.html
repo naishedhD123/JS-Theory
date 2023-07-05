@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+  <img src="1.jpg" alt="" height="400px" width="100%" id="i">
+  <button onclick="changeImg()">change Img</button>
+
+  <script>
+
+    image = document.getElementById('i');
+
+    function changeImg()
+    {
+
+      console.log(image.src);
+      if(image.src.match("1.jpg"))
+      {
+        image.src = "2.jpg";
+      }
+      else if(image.src.match("2.jpg"))
+      {
+        image.src = "3.jpg";
+      }
+      else if(image.src.match("3.jpg"))
+      {
+        image.src = "4.jpg";
+      }
+      else if(image.src.match("4.jpg"))
+      {
+        image.src = "1.jpg";
+      }
+
+      setTimeout("changeImg()",1000);
+    }
+    changeImg();
+
+
+  </script>
+
+</body>
+</html>

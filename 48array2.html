@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script>
+
+    arr = [1, 2, 3, "hello", arr2 = ["hii", 10, 15, 20]];
+
+    // document.write(arr[4][3]);
+    // document.write("<br>");
+    // document.write(arr2[2]);
+
+    // for(key in arr)
+    // {
+    //   document.write(arr[key]+"<br>");
+    // }
+
+    // for(var y of arr)
+    // {
+    //   document.write(y);
+    // }
+
+    arr.forEach(test)
+
+    function test(val, key)
+    {
+      document.write(key + "=>");
+      document.write(val);
+      document.write("<br>")
+    }
+
+    document.write("<br>");
+
+    arr2.forEach(test2)
+    function test2(val, key)
+    {
+      document.write(key + "=>");
+      document.write(val);
+      document.write("<br>")
+    }
+  </script>
+
+</body>
+
+</html>

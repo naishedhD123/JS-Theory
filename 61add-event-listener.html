@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .active
+    {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae deleniti soluta quibusdam reiciendis ut
+    consequuntur laborum natus cupiditate. Temporibus modi laboriosam blanditiis quo possimus placeat consequatur
+    dolorem esse optio ratione.</p>
+
+    <button>hide</button>
+    <button>show</button>
+    <button>hide/show</button>
+
+    <script>
+
+        p = document.querySelector('p');
+        btn = document.querySelectorAll('button');
+
+        console.log(p);
+
+        btn[0].addEventListener("click",hide);
+        btn[1].addEventListener("click",show);
+        btn[2].addEventListener("click",hideShow);
+
+
+        function hide()
+        {
+          p.style.display = "none";
+        }
+
+        function show()
+        {
+          p.style.display = "block";
+        }
+
+        function hideShow()
+        {
+          p.classList.toggle('active');
+        }
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
